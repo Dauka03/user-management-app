@@ -1,0 +1,62 @@
+.mobile-menu-button {
+  display: none;
+}
+
+.searchBlock {
+  display: flex;
+}
+
+@media screen and (max-width: 1024px) {
+  .mobile-menu-button {
+    display: block;
+    /* Измените display на "block" на мобильных устройствах */
+  }
+
+  .layout {
+    display: none;
+  }
+
+  .body {
+    width: 100vw;
+    height: 100vh;
+    border-radius: 0%;
+  }
+
+  .body header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .body section {
+    display: block;
+  }
+
+  .searchBlock {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    align-items: flex-start;
+  }
+
+  .searchBlock Button {
+    width: 70vw;
+  }
+
+  .a Input {
+    width: 70vw;
+  }
+
+  .userBlock {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .userBlock .chakra-button {
+    font-size: 12px;
+    margin-left: 0;
+  }
+}
